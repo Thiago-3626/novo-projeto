@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-tela-1.css">
+    <title>Fogo & Sabor</title>
+    <!-- <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    border: none;
+}
+
+html::-webkit-scrollbar{
+    width: 1.0rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #fff;
+    border-radius: 5rem;
+}
+
+.background{
+    background-image: url(fundo-restaurante.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    
+}
+
+body{
+    background-color: #000;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+.logo img{
+    width: 75px;
+    height: auto;
+    margin-left: 5rem;
+}
+
+.titulo-logo{
+    color: #fff;
+    align-items: center;
+    padding-left: 80px;
+    
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 20px;
+    border: none;
+}
+
+.C-icone{
+    margin-right: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+/* .icone ion-icon{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+} */
+
+ul li a:hover{
+    text-transform: capitalize;
+    color: rgb(101, 110, 3);
+    border-bottom: solid 1px;
+}
+hr{
+    border-bottom: solid 0.1px;
+    color: rgb(54, 46, 46);
+    margin-top: 15px;
+}
+
+.C-title{
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+
+.C-title h1{
+    color: #fff;
+    font-size: 4.8rem;
+
+}
+
+.C-title p{
+    color: rgb(231, 208, 208);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.C-title button{
+    margin-top: 2rem;
+    background-color: #d3ad7f;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+
+.C-title button:hover{
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+.section-1 h1{
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    font-size: 3rem;
+
+}
+
+.section-1 span{
+    color: #d3ad7d;
+}
+
+.section-1{
+    padding: 5rem;
+}
+
+.sobre-nos{
+    display: flex;
+    align-items: center;
+    background-color: #13121a;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.sobre-img{
+    max-width: 100%;
+    width: 80ram;
+    height: auto;
+}
+
+.sobre-nos-title{
+    margin-left: 1.3rem;
+}
+
+.sobre-nos-title h2{
+    color: #ffff;
+    font-size: 2rem;   
+}
+
+.sobre-nos-title p{
+    line-height: 2rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+    width: 45rem;
+}
+
+.sobre-nos-title button{
+    margin-top: 2rem;
+    background-color: #d3ad7f;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.sobre-nos-title button:hover{
+    letter-spacing: 2px;
+    transition: 0.3s all;
+}
+
+.section-2 h1{
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3rem;
+}
+
+
+
+.sub-titulo-cardapio{
+    color: rgb(231, 208, 208);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.section-2 span{
+    color: #d3ad7f;
+}
+
+.container-card-1{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-img{
+    border:solid 1px rgba(255, 255, 255, 3);
+    padding: 5rem;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 30rem;
+    height: 23rem;  
+}
+
+.card-img img{
+    width: 120px;
+    height: auto;
+}
+
+.card-img h3{
+    font-size: 1.3rem;
+    color: #fff;
+} 
+
+.card-img p{
+    color: #ccc;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+} 
+
+.card-img button{
+    margin-top: 1rem;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.card-img:hover{
+    transform: scale(1.1);
+    transition: 0.5 all;
+    background-color: #0d0d0f;
+} 
+
+.btn-cardapio{
+    margin-top: 0.2rem;
+    background-color: #d3ad7f;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 730px;
+}
+
+.btn-cardapio:hover{
+    letter-spacing: 2px;
+    transition: 0.3s all;
+} 
+
+.section-3 h1{
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 3rem;   
+}
+
+.section-3 span{
+    color: #d3ad7f;
+}
+
+.section-3 p{
+    color: #ccc;
+    font-size: 1.0rem;
+    margin-top: 1rem;
+}
+
+.c-card{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.cards{
+    border: solid 1px rgba(255, 255, 255, 3);
+    padding: 5rem;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    width: 30rem;
+    height: 30rem; 
+    margin-top: 3rem;
+} 
+
+.title-produtos{
+    color: #ccc;
+}
+
+.section-4 h1{
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.section-4 span{
+    color: #d3ad7f;
+}
+
+.container-cliente{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.paragrafo{
+    border: solid 1px rgba(255, 255, 255, .3);
+    padding: 3rem;
+    width: 28rem;
+}
+
+.paragrafo img{
+    width: 85px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.paragrafo p{
+    color: #ccc;
+    line-height: 2rem;
+    margin-top: 1rem;
+}
+
+.paragrafo h4{
+    color: #fff;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.section-5{
+    padding: 0 10rem 0 10rem;
+}
+
+.section-5 h1{
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+form{
+    background-color: #13121a;
+    padding: 2rem;
+    width: 50rem;
+    height: auto;
+}
+
+form h3{
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.section-5 .container-form .map{
+    width: 100%;
+    flex: 1.45rem;
+    object-fit: cover;
+}
+
+.inputform{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    margin-top: 1rem;
+    background: #000;
+}
+
+.inputform input{
+    width: 100%;
+    padding: 1.5rem;
+    background: #000;
+    color: #ffff;
+}
+
+.inputform span{
+    font-size: 1.5rem;
+    color: #fff; 
+}
+
+form button{
+    margin-top: 2rem;
+    background-color: #d3ad7f;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+form button:hover{
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+html{
+    font-size: 55%;
+}
+
+.header{
+    padding:1.5rem 2rem;
+}
+
+section{
+    padding:2rem;
+}
+
+}
+
+@media (max-width:768px){
+
+#menu-btn{
+    display: inline-block;
+}
+
+.header .navbar{
+    position: absolute;
+    top:100%; right: -100%;
+    background: #fff;
+    width: 30rem;
+    height: calc(100vh - 9.5rem);
+}
+
+.header .navbar.active{
+    right:0;
+}
+
+.header .navbar a{
+    color:var(--black);
+    display: block;
+    margin:1.5rem;
+    padding:.5rem;
+    font-size: 2rem;
+}
+
+.header .search-form{
+    width: 90%;
+    right: 2rem;
+}
+
+.home{
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+}
+
+}
+
+@media (max-width:450px){
+
+html{
+    font-size: 50%;
+}
+
+}
+    </style> -->
+</head>
+<body>
+    <div class="background">
+        <header>
+            <div class="logo">
+                <!-- <img src="Free_Sample_By_Wix.jpg" alt="logo"> -->
+                <h1 class="titulo-logo">Fogo & Sabor</h1>
+            </div>
+            <ul class="links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Cardápio</a></li>
+            </ul>
+            <div class="C-icone">
+                <span class="Icone"><ion-icon name="logo-facebook"></ion-icon></span>
+                <span class="Icone"><ion-icon name="logo-instagram"></ion-icon></span>
+
+            </div> <!-- C-icon -->
+        </header>
+        <hr>
+        
+        <div class="C-title">
+            <div class="title">
+                <h1>O Prazer da</h1>
+                <h1>alta Gastronomia</h1>
+            </div> <!-- title -->
+            <p><strong>No Fogo e Sabor, cada prato é uma obra-prima culinária <br> que encanta todos os sentidos.</strong></p>
+            <button>Confira o Cardápio</button>
+        </div> <!-- C-title -->
+
+    </div> <!--Background-->
+
+    <section class="section-1">
+        <h1><span>SOBRE </span>NÓS</h1> 
+
+        <div class="sobre-nos">
+            <div class="sobre-img">
+                <img src="sobre-nos.jpg" alt="sobre">
+            </div> <!--sobre-img-->
+            
+            <div class="sobre-nos-title">
+                <h2>Nossa origem e paixão</h2>
+                <p> O "Fogo & Sabor" foi fundado há várias décadas por um renomado chef cuja paixão pela culinária o levou a criar um espaço que se tornaria sinônimo de excelência gastronômica. O nome do restaurante, "Fogo & Sabor", reflete a filosofia culinária que ele trouxe ao estabelecimento.
+                     "Fogo" representa a paixão e dedicação com que a equipe cozinha cada prato, enquanto "Sabor" se refere à importância da qualidade e do gosto excepcional em cada criação. </p>
+                    <button>Saiba Mais</button>
+
+            </div> <!--sobre-nos-title-->
+
+        </div> <!-- sobre-nos -->
+
+    </section> <!-- section-1 -->
+
+    <section class="section-2">
+        <h1>Nosso <span>Cardápio</span></h1>
+        <p class="sub-titulo-cardapio">Alguns dos nossos melhores pratos</p>
+        
+
+        <div class="container-card-1">
+
+            <div class="card-img">
+                <img src="prato-1.jpg" alt="">
+                <h3>Filet Mignon ao Molho de Vinho Tinto</h3>
+                <!-- <p>R$ 5.50</p> -->
+                <!-- <button>Add Carrinho</button> -->
+            </div> <!--card-img-->
+
+            <div class="card-img">
+                <img src="prato-2.jpg" alt="">
+                <h3>Salmão Gravlax com Mostarda de Endro</h3>
+                <!-- <p>R$ 5.50</p> -->
+                <!-- <button>Add Carrinho</button> -->
+            </div> <!--card-img-->
+
+            <div class="card-img">
+                <img src="prato-3.jpg" alt="">
+                <h3>Risoto de Lagostim</h3>
+                <!-- <p>R$ 5.50</p> -->
+                <!-- <button>Add Carrinho</button> -->
+                
+            </div> <!--card-img-->
+            
+        </div> <!--container-card-1-->
+
+        <button class="btn-cardapio">Cardápio</button>
+
+       
+
+    </section> <!-- section-2-->   
+
+    <section class="section-3">
+        <h1>NOSSO<span> VINHOS</span></h1>
+        <div class="c-card">
+            <div class="cards">
+                <div class="icones">
+                    
+                </div> <!--icones-->
+                <div><img src="vinho-1.webp" alt="produto"></div>
+                <div class="title-produtos">
+                    <h3>Château Margaux</h3>
+                </div> <!--title-produtos-->
+                <div class="price"><p>Um renomado vinho tinto da região de Bordeaux, França.</p></div>
+            </div> <!--cards-->
+
+            <div class="cards">
+                <div class="icones">
+                    
+                </div> <!--icones-->
+                <div><img src="vinho-2.jpg" alt="produto"></div>
+                <div class="title-produtos">
+                    <h3>Opus One</h3>
+                </div> <!--title-produtos-->
+                <div class="price"><p>Um vinho tinto californiano</p></div>
+            </div> <!--cards-->
+
+            <div class="cards">
+                <div class="icones">
+                    
+                </div> <!--icones-->
+                <div><img src="vinho-3.jpg" alt="produto"></div>
+                <div class="title-produtos">
+                    <h3>Dom Pérignon</h3>
+                </div> <!--title-produtos-->
+                <div class="price"><p>Um Champagne de prestígio da França.</p></div>
+            </div> <!--cards-->
+
+        </div> <!--c-card-->
+
+    </section> <!--section-3-->
+
+    <section class="section-4">
+        <h1>ANALISE DOS <span>CLIENTES</span></h1>
+
+        <div class="container-cliente">
+
+            <div class="paragrafo">
+                <div class="info-img">
+                    <!-- <img src="quote-img.png" alt="info"> -->
+                </div><!--info-img-->
+                <p>Este restaurante é simplesmente fenomenal! Cada prato foi uma explosão de sabor e criatividade. Desde a apresentação impecável até o atendimento atencioso, tudo foi perfeito. Uma noite inesquecível.</p>
+                <img src="cliente-1.jpg" alt="pic-1">
+                <h4>Maraisa</h4>
+                <div class="stars">
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-half-outline"></ion-icon></a>
+                </div><!--stars-->            
+            </div><!--paragrafo-->
+
+            <div class="paragrafo">
+                <div class="info-img">
+                    <!-- <img src="quote-img.png" alt="info"> -->
+                </div><!--info-img-->
+                <p>Uma experiência gastronômica excepcional! Cada prato era uma obra de arte, e os sabores eram inesquecíveis. O serviço foi impecável, a atmosfera elegante e a seleção de vinhos maravilhosa. Este restaurante é uma verdadeira jóia da alta culinária.</p>
+                <img src="cliente-2.jpg" alt="pic-1">
+                <h4>Matheus</h4>
+                <div class="stars">
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-half-outline"></ion-icon></a>
+                </div><!--stars-->            
+            </div><!--paragrafo-->
+
+            <div class="paragrafo">
+                <div class="info-img">
+                    <!-- <img src="quote-img.png" alt="info"> -->
+                </div><!--info-img-->
+                <p>Uma experiência sensorial incrível! Cada garfada era como uma viagem ao paraíso culinário. O chef é um verdadeiro gênio, e a equipe foi gentil e experiente. Este é o tipo de lugar que você visita para celebrar ocasiões especiais.</p>
+                <img src="cliente-3.jpg" alt="pic-1">
+                <h4>Thiago</h4>
+                <div class="stars">
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                    <a href="#"><ion-icon name="star-outline"></ion-icon></a>
+                </div><!--stars-->            
+            </div><!--paragrafo-->
+
+        </div><!--container-clientes-->
+        
+
+    </section> <!--section-4-->
+
+    <section class="section-5">
+        <h1>CONTATOS</h1>
+        <div class="container-form">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24612.765767260073!2d-46.65271924559068!3d-23.50697002682506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef76f27e166df%3A0xd8dad5449fbd4220!2sRestaurante%20da%20Fazenda!5e0!3m2!1sen!2sbr!4v1697402344938!5m2!1sen!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form>
+                <h3>ENTRAR EM CONTATO</h3>
+                <div class="inputform">
+                    <span><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" placeholder="Nome">
+                </div> <!--imputform-->
+
+                <div class="inputform">
+                    <span><ion-icon name="paper-plane-outline"></ion-icon></span>
+                    <input type="text" placeholder="E-mail">
+                </div> <!--imputform-->
+
+                <div class="inputform">
+                    <span><ion-icon name="call-outline"></ion-icon></span>
+                    <input type="text" placeholder="Telefone">
+                </div> <!--inputform--> 
+                <button>Eviar Pedido</button>          
+            </form>
+        </div> <!--container-form-->
+
+    </section> <!--section-5-->
+
+    
+ 
+
+    <footer> <!--- MOSTRA NO RODAPE --->
+        <div class="logo">
+            <!-- <img src="Free_Sample_By_Wix.jpg" alt="logo"> -->
+        </div>        <p class="copyright">&copy; Copyright Fogo & Sabor - 2022</p>
+    </footer>
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
